@@ -13,10 +13,10 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Show all files
+      - name: Show all files in workspace
         run: ls -al
 
-      - name: Doing SSH to EC2
+      - name: SSH into EC2 and run commands
         uses: appleboy/ssh-action@v1
         with:
           host: ${{ secrets.EC2_HOST }}
@@ -27,10 +27,4 @@ jobs:
             whoami
             pwd
             ls -al
-            mkdir rahul
-
-
-
-
-   
-        
+            mkdir -p rahul
