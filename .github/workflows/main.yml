@@ -1,0 +1,19 @@
+name: Deploy HTML to EC2
+
+on:
+  push:
+    branches:
+        -main
+        
+jobs:
+  deploy: 
+     runs-on: ububtu-latest
+
+     steps:
+     - name: checkout Code
+       uses: actions/checkout@v4
+
+     - name: Show all files
+       run: ls -al
+   
+        
