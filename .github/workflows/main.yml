@@ -7,15 +7,15 @@ on:
         
 jobs:
   deploy: 
-     runs-on: ububtu-latest
+    runs-on: ububtu-latest
 
-     steps:
-     - name: checkout Code
-       uses: actions/checkout@v4
+    steps:
+    - name: checkout Code
+      uses: actions/checkout@v4
 
-     - name: Show all files
-       run: ls -al
+    - name: Show all files
+      run: ls -al
 
-     # - name: Doing SSH to EC2
+
    
         
