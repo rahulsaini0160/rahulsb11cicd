@@ -3,7 +3,7 @@ name: Deploy HTML to EC2
 on:
   push:
     branches:
-        -main
+      - main
         
 jobs:
   deploy: 
@@ -15,5 +15,7 @@ jobs:
 
      - name: Show all files
        run: ls -al
+
+     - name: Doing SSH to EC2
    
         
