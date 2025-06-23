@@ -27,7 +27,8 @@ jobs:
             whoami
             pwd
             ls -al
-            mkdir rahul
+            rm -rf rahul
+            mkdir rahuls
           # source: "./"
           # target: "./"
             
